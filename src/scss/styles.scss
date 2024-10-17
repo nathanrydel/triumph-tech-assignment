@@ -1,6 +1,9 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "bootstrap/scss/functions";
 
@@ -9,6 +12,8 @@
 $body-bg: #f2f2f2;
 $input-btn-padding-y: .5rem;
 $input-btn-padding-x: 1.5rem;
+$font-family-sans-serif: 'Roboto', sans-serif !default;
+$headings-font-family: 'Titillium Web', sans-serif !default;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "bootstrap/scss/variables";
@@ -47,6 +52,22 @@ $utilities: map-merge($utilities,
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+//! RESET STYLES
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//! CUSTOM ID
 
 #hero-bg {
   object-fit: cover;
@@ -90,6 +111,18 @@ $utilities: map-merge($utilities,
   }
 }
 
+//! UTILITY CLASSES
+
 .no-border-rad {
   border-radius: 0;
+}
+
+.no-wrap {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+// Utility class for letter spacing (tracking)
+.tracking-wide {
+  letter-spacing: 0.1em; // Adjust the value as needed
 }
