@@ -1,0 +1,65 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$body-bg: #f2f2f2;
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1.5rem;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "bootstrap/scss/variables";
+// @import "bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+
+#hero {
+  background: url(./images/1940.jpg) no-repeat bottom center;
+  background-size: cover;
+  height: 25rem;
+}
+
+#hero-img-container {
+  box-sizing: content-box;
+  width: 15rem;
+  height: 15rem;
+}
+
+#hero-img {
+  // box-sizing: content-box;
+  object-fit: cover;
+  object-position: top center;
+}
+
+#hero-cta {
+  width: 16rem;
+  height: 15rem;
+}
+
+.no-border-rad {
+  border-radius: 0;
+}
