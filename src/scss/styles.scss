@@ -32,6 +32,17 @@ $input-btn-padding-x: 1.5rem;
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/helpers";
 
+$utilities: map-merge($utilities,
+    (
+      "width": map-merge(map-get($utilities, "width"),
+        (responsive: true)),
+      "font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true),
+      ),
+      "font-weight": map-merge(map-get($utilities, "font-weight"),
+        (responsive: true),
+      )));
+
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";
 
