@@ -93,6 +93,6 @@ The [`gh-pages`](https://www.npmjs.com/package/gh-pages) package is used to hand
 **Fonts Used:**
 
 - [Titillium Web](https://fonts.google.com/specimen/Titillium+Web)
-- [Roboto](https://fonts.google.com/specimen/Titillium+Web)
+- [Roboto](https://fonts.google.com/specimen/Roboto)
 
 Feel free to reach out for any further questions or assistance regarding the project.
