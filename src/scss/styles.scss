@@ -57,7 +57,7 @@ $utilities: map-merge($utilities,
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+  // font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -67,7 +67,7 @@ img {
   height: auto;
 }
 
-//! CUSTOM ID
+//! CUSTOM ID STYLES
 
 #hero-bg {
   object-fit: cover;
@@ -113,16 +113,13 @@ img {
 
 //! UTILITY CLASSES
 
-.no-border-rad {
-  border-radius: 0;
-}
-
+// Class for word wrapping behavior
 .no-wrap {
   word-break: keep-all;
   white-space: nowrap;
 }
 
-// Utility class for letter spacing (tracking)
+// Class for letter spacing (tracking)
 .tracking-wide {
-  letter-spacing: 0.1em; // Adjust the value as needed
+  letter-spacing: 0.1em;
 }
